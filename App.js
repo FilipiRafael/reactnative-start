@@ -1,12 +1,35 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import React from "react";
+import { StyleSheet, Text, View, ScrollView } from "react-native";
+import MyComponent from "./MyComponent";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hello, this is my first App with React Native!</Text>
-      <StatusBar style="auto" />
+      <StatusBar style="light" />
+      <Text style={styles.title}>My App</Text>
+      <ScrollView>
+        <MyComponent />
+        <MyComponent />
+        <MyComponent />
+        <MyComponent />
+        <MyComponent />
+        <MyComponent />
+        <MyComponent />
+        <MyComponent />
+        <MyComponent />
+        <MyComponent />
+        <MyComponent />
+        <MyComponent />
+        <MyComponent />
+        <MyComponent />
+        <MyComponent />
+        <MyComponent />
+        <MyComponent />
+        <MyComponent />
+        <MyComponent />
+        <MyComponent />
+      </ScrollView>
     </View>
   );
 }
@@ -14,8 +37,14 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "darkblue",
+    justifyContent: "center",
+    alignItems: "center",
+    paddingVertical: 82,
+  },
+  title: {
+    color: "#fff",
+    fontSize: "24",
+    marginBottom: 24,
   },
 });
